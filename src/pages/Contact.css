@@ -1,0 +1,117 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-section {
+  min-height: 100vh;
+  max-width: 2800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background-image: url("C:\portfolio\portfolio\public\images\contact.jpg");/* use a relative path from 'public' */
+  background-repeat: no-repeat;
+  background-size: cover;          /* Makes image fill the container */
+  background-position: center;     /* Centers the image */
+  background-attachment: fixed;    /* Optional: adds parallax effect */
+  padding: 2rem;
+}
+
+
+.contact-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(7px);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  animation: fadeInUp 1.2s ease-out;
+  margin-top: -10%;
+  box-shadow:10px 10px 10px rgb(36, 151, 180);
+}
+
+.contact-title {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #fff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact-form .input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 12px 12px 0;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.contact-form label {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  color: #ccc;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.contact-form input:focus ~ label,
+.contact-form textarea:focus ~ label,
+.contact-form input:valid ~ label,
+.contact-form textarea:valid ~ label {
+  top: -14px;
+  font-size: 12px;
+  color: #00eaff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom: 2px solid #00eaff;
+  box-shadow: 0 1px 0 #00eaff;
+}
+
+.send-btn {
+  background: #434444;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.send-btn:hover {
+  background: #00c7d6;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+ 

@@ -1,0 +1,137 @@
+/* About.css */
+
+.about-section {
+  padding: 80px 40px;
+  background-color: #f7f9fb;
+  min-height: 100vh;
+  animation: fadeSlideUp 0.8s ease-in-out both;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  animation: slideInLeft 1s ease-out both;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  color: #faf9f9;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  box-shadow:10px 10px 10px rgb(36, 151, 180);
+}
+
+.about-text p {
+  margin-top: 30px;
+  font-size: 1.25rem;
+  color: #dec0be;
+  font-weight: 600;
+  line-height: 1.6;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+  box-shadow:10px 10px 10px rgb(36, 151, 180);
+}
+
+.about-image {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 1.2s ease-out both;
+  
+}
+
+.about-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+   box-shadow:10px 10px 10px rgb(36, 151, 180);
+  
+}
+
+/* Animations */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-top: 20px;
+  }
+}
+.about-section {
+  background-image: url("C:\portfolio\portfolio\public\images\about5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  
+}
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* adjust opacity */
+  z-index: 1;
+}
+
+.about-container {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+
+
+ 
+

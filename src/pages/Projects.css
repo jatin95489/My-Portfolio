@@ -1,0 +1,133 @@
+/* Projects.css */
+
+.projects-section {
+  padding: 80px 20px;
+  background: #f7f9fc;
+  animation: fadeIn 1.5s ease-in-out;
+  height: 600px;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #f8f8f8;
+  text-shadow: #00aacd;
+  animation: slideUp 0.7s ease forwards;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: rgb(253, 253, 253);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeSlideIn 0.8s ease;
+  box-shadow:15px 15px 15px rgb(36, 151, 180);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+ box-shadow:20px 20px 20px rgb(211, 166, 155);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.buttons a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 16px;
+  margin-right: 10px;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  color: white;
+  background: #333;
+  transition: background-color 0.3s ease;
+}
+
+.buttons a:hover {
+  background: #555;
+}
+
+.live-btn {
+  background-color: #00d8ff;
+  color: #000;
+}
+
+.live-btn:hover {
+  background-color: #00aacd;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.projects-section {
+  background-image: url("C:\portfolio\portfolio\public\images\projects.jpg");
+  background-size: cover;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  
+}
+.projects-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(5, 5, 5, 0); /* adjust opacity */
+  z-index: 1;
+}
+
+.projects-container {
+  position: relative;
+  z-index: 2;
+}
